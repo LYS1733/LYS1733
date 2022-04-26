@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<script src="https://unpkg.com/vue/dist/vue.js">
+</script>
+<head>32031113林永胜 实验3</head>
+<div>
+<p>Class:jsj 计应三加201</p>
+<p>ID:32031113</p>
+<P>Name:林永胜</P>
+<script>
+    new.Vue({
+        el:'#app',
+        data{
+            x1:'I am a simple Text',
+            x2:1,
+            x3:'yellow',
+            x4:0
+        }
+    })
+</script>
+<hr>
+<p>数据绑定最常见的形式就是使用“Mustache”语法(双花括号/双大括号）的文本插值</p>
+<p>以下是常见的几种情况：</p>
+<ul data-v-4eb9bb25>
+    <li>
+        简单文本插入：这是一个简单的文本
+    </li>
+    <li>
+        表达式绑定：
+    </li>
+    <ul>
+        <li>
+            x2 + 1 = 2
+        </li>
+        <li>
+            ?x2 = T
+        </li>
+    </ul>
+    </li>
+    <li>
+        当插值需要出现在标签属性时,需要使用v-bind(属性绑定):
+    </li>
+    <ul>
+        <li>
+            <p id="当前列表字体颜色"data-v-4eb9bb25 style="color:yellow">变量x3用于设置当前列表项字体颜色为黄色</p>
+        </li>
+        <li>
+            x4的值控制按钮是否可见{为0则不可见,0以外的数字为可见) :
+        <button v-on:click="reverseMessage">按钮</button>
+      </li>
+      <li>
+        所有其他合理的属性，均可捆绑
+      </li>
+        </ul>
+    </li>
+  </ul>
+</body>
+</html>
